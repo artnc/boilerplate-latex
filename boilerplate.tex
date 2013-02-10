@@ -1,0 +1,85 @@
+\documentclass[letterpaper,12pt]{article}
+
+% Garamond font
+% \usepackage[urw-garamond]{mathdesign}
+% \usepackage[T1]{fontenc}
+
+\usepackage{amsfonts,amsmath,amssymb,array,booktabs,capt-of,color,enumerate,graphics,graphicx,listings,mdwlist,multicol}
+
+% TiKZ
+% \usepackage{tikz,tikz-qtree,tikz-dependency}
+% \usetikzlibrary{shapes}
+
+\usepackage[normalem]{ulem}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+
+% Easily highlight answers in math/physics homework
+\newcommand{\ans}[1]{\textcolor{blue}{#1}}
+
+% Paragraph formatting
+\setlength{\parskip}{1ex}
+% \setlength{\parindent}{0pt}\makeatletter
+
+% Formatting for augmented matrices
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+% Hyperref settings
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+% Listings settings
+\definecolor{commentcolor}{rgb}{0,0.6,0}
+\definecolor{bgcolor}{rgb}{0.93,0.93,0.93}
+\lstset{
+  language=Python,
+  basicstyle=\footnotesize\ttfamily,
+  numbers=left,
+  captionpos=b,
+  frame=single,
+  title=\lstname,
+  tabsize=2,
+  breaklines=true,
+  breakatwhitespace=true,
+  showstringspaces=false,
+  aboveskip=18pt,
+  belowskip=18pt,
+  xleftmargin=17pt,
+  backgroundcolor=\color{bgcolor},
+  keywordstyle=\color{blue},
+  commentstyle=\color{commentcolor},
+  stringstyle=\color{magenta}
+}
+
+\begin{document}
+
+\title{\vspace{-0.5in}CS 4810 -- Assignment \#1}
+\author{Art Chaidarun (nc5rk)}
+\renewcommand{\today}{February 12, 2013}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\subsection*{Section 1}
+
+\begin{enumerate}
+  \item
+    \begin{enumerate}[a.]
+      \item
+      \item
+      \item
+      \item
+    \end{enumerate}
+  \item
+\end{enumerate}
+
+\end{document}
