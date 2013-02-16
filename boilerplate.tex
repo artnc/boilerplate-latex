@@ -1,19 +1,37 @@
 \documentclass[letterpaper,12pt]{article}
 
+% Boilerplate LaTeX by Art Chaidarun
+
 % Garamond font
 % \usepackage[urw-garamond]{mathdesign}
 % \usepackage[T1]{fontenc}
 
-\usepackage{amsfonts,amsmath,amssymb,array,booktabs,capt-of,color,enumerate,graphics,graphicx,listings,mdwlist,multicol}
+\usepackage[table]{xcolor} % Must come before packages that load xcolor
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{capt-of}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{mdwlist}
+\usepackage{multicol}
+\usepackage{pgfplots}
 
 % TiKZ
-% \usepackage{tikz,tikz-qtree,tikz-dependency}
+% \usepackage{tikz}
+% \usepackage{tikz-qtree}
+% \usepackage{tikz-dependency}
 % \usetikzlibrary{shapes}
 
 \usepackage[normalem]{ulem}
-\usepackage[table]{xcolor}
-\usepackage{hyperref}
 \usepackage[margin=1in]{geometry}
+% \usepackage{hyperref} % Must be loaded last
 
 % Easily highlight answers in math/physics homework
 \newcommand{\ans}[1]{\textcolor{blue}{#1}}
@@ -21,6 +39,9 @@
 % Paragraph formatting
 \setlength{\parskip}{1ex}
 % \setlength{\parindent}{0pt}\makeatletter
+
+% Letter subsections (instead of having 1.1, 1.2, etc)
+\renewcommand{\thesubsection}{\Alph{subsection}.}
 
 % Formatting for augmented matrices
 \makeatletter
@@ -31,13 +52,13 @@
 \makeatother
 
 % Hyperref settings
-\hypersetup{
-  colorlinks=true,
-  linkcolor=black,
-  urlcolor=blue
-}
+% \hypersetup{
+%   colorlinks=true,
+%   linkcolor=black,
+%   urlcolor=blue
+% }
 
-% Listings settings
+% Listings settings (please customize yourself!)
 \definecolor{commentcolor}{rgb}{0,0.6,0}
 \definecolor{bgcolor}{rgb}{0.93,0.93,0.93}
 \lstset{
@@ -64,17 +85,16 @@
 
 \title{\vspace{-0.5in}CS 4810 -- Assignment \#1}
 \author{Art Chaidarun (nc5rk)}
-\renewcommand{\today}{February 12, 2013}
+\renewcommand{\today}{February 16, 2013}
 \maketitle
 \thispagestyle{empty}
 \pagestyle{empty}
 
-\subsection*{Section 1}
+\subsection*{Subsection}
 
 \begin{enumerate}
   \item
     \begin{enumerate}[a.]
-      \item
       \item
       \item
       \item
