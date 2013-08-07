@@ -1,6 +1,6 @@
 \documentclass[letterpaper,12pt]{article}
 
-% Boilerplate LaTeX by Art Chaidarun
+% Boilerplate LaTeX by Art Chaidarun, released under MIT license
 
 % Garamond font
 % \usepackage[urw-garamond]{mathdesign}
@@ -13,15 +13,15 @@
 \usepackage{amssymb}
 \usepackage{array}
 \usepackage{booktabs}
-\usepackage{capt-of}
+% \usepackage{capt-of}
 \usepackage{color}
 \usepackage{enumerate}
 \usepackage{graphics}
 \usepackage{graphicx}
-\usepackage{listings}
+% \usepackage{listings}
 \usepackage{mdwlist}
 \usepackage{multicol}
-\usepackage{pgfplots}
+% \usepackage{pgfplots}
 
 % TiKZ
 % \usepackage{tikz}
@@ -34,22 +34,22 @@
 % \usepackage{hyperref} % Must be loaded last
 
 % Easily highlight answers in math/physics homework
-\newcommand{\ans}[1]{\textcolor{blue}{#1}}
+% \newcommand{\ans}[1]{\textcolor{blue}{#1}}
 
 % Paragraph formatting
 \setlength{\parskip}{1ex}
 % \setlength{\parindent}{0pt}\makeatletter
 
 % Letter subsections (instead of having 1.1, 1.2, etc)
-\renewcommand{\thesubsection}{\Alph{subsection}.}
+% \renewcommand{\thesubsection}{\Alph{subsection}.}
 
 % Formatting for augmented matrices
-\makeatletter
-\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
-  \hskip -\arraycolsep
-  \let\@ifnextchar\new@ifnextchar
-  \array{#1}}
-\makeatother
+% \makeatletter
+% \renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+%   \hskip -\arraycolsep
+%   \let\@ifnextchar\new@ifnextchar
+%   \array{#1}}
+% \makeatother
 
 % Hyperref settings
 % \hypersetup{
@@ -59,37 +59,38 @@
 % }
 
 % Listings settings (please customize yourself!)
-\definecolor{commentcolor}{rgb}{0,0.6,0}
-\definecolor{bgcolor}{rgb}{0.93,0.93,0.93}
-\lstset{
-  language=Python,
-  basicstyle=\footnotesize\ttfamily,
-  numbers=left,
-  captionpos=b,
-  frame=single,
-  title=\lstname,
-  tabsize=2,
-  breaklines=true,
-  breakatwhitespace=true,
-  showstringspaces=false,
-  aboveskip=18pt,
-  belowskip=18pt,
-  xleftmargin=17pt,
-  backgroundcolor=\color{bgcolor},
-  keywordstyle=\color{blue},
-  commentstyle=\color{commentcolor},
-  stringstyle=\color{magenta}
-}
+% \definecolor{commentcolor}{rgb}{0,0.6,0}
+% \definecolor{bgcolor}{rgb}{0.93,0.93,0.93}
+% \lstset{
+%   language=Python,
+%   basicstyle=\footnotesize\ttfamily,
+%   numbers=left,
+%   captionpos=b,
+%   frame=single,
+%   title=\lstname,
+%   tabsize=2,
+%   breaklines=true,
+%   breakatwhitespace=true,
+%   showstringspaces=false,
+%   aboveskip=18pt,
+%   belowskip=18pt,
+%   xleftmargin=17pt,
+%   backgroundcolor=\color{bgcolor},
+%   keywordstyle=\color{blue},
+%   commentstyle=\color{commentcolor},
+%   stringstyle=\color{magenta}
+% }
 
 \begin{document}
 
 \title{\vspace{-0.5in}CS 4810 -- Assignment \#1}
 \author{Art Chaidarun (nc5rk)}
-\renewcommand{\today}{February 16, 2013}
+\renewcommand{\today}{August 7, 2013}
 \maketitle
 \thispagestyle{empty}
 \pagestyle{empty}
 
+% \begin{multicols}{2}
 \subsection*{Subsection}
 
 \begin{enumerate}
@@ -101,5 +102,6 @@
     \end{enumerate}
   \item
 \end{enumerate}
+% \end{multicols}
 
 \end{document}
